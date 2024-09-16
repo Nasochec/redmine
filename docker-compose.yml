@@ -21,14 +21,6 @@ services:
     volumes:
       - ./config.rb:/usr/src/redmine/config/environment.rb
       # - ./config.ru:/usr/src/redmine/config.ru
-    # networks:
-      # - redmine-network
-  # db:
-  #   image: mysql:8.0
-  #   restart: always
-  #   environment:
-  #     MYSQL_ROOT_PASSWORD: example
-  #     MYSQL_DATABASE: redmine
 
   db:
     container_name: mariadb-container
@@ -39,10 +31,3 @@ services:
       MYSQL_USER: redmine
       MYSQL_PASSWORD: pakistan
       MYSQL_ROOT_PASSWORD: pakistan
-    # volumes:
-      # - ./mariadb_data:/var/lib/mysql
-    # networks:
-      # - redmine-network
-
-# networks:
-  # redmine-network:
