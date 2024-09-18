@@ -15,12 +15,9 @@ services:
       REDMINE_DB_USERNAME: redmine
       REDMINE_DB_PASSWORD: pakistan
       REDMINE_RELATIVE_URL_ROOT: /plane
-      #REDMINE_DB_MYSQL: db
-      #REDMINE_DB_PASSWORD: example
       REDMINE_SECRET_KEY_BASE: supersecretkey
     volumes:
       - ./config.rb:/usr/src/redmine/config/environment.rb
-      # - ./config.ru:/usr/src/redmine/config.ru
 
   db:
     container_name: mariadb-container

@@ -10,11 +10,11 @@ if Dir.glob(File.join(vendor_plugins_dir, "*")).any?
   exit 1
 end
 
-RedmineApp::Application.routes.default_scope = "/plane" 
+#RedmineApp::Application.routes.default_scope = "/plane" 
 #RedmineApp::Application.initialize!
 Rails.application.initialize!
 Redmine::Utils::relative_url_root = "/plane" 
 
-ActionController::Base.relative_url_root = "/plane" 
+#ActionController::Base.relative_url_root = "/plane" 
 # Initialize the Rails application
 #Rails.application.initialize!
